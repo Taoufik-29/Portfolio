@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>link-checker-mobile — Taoufik Amrani</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav class="top">
+        <div class="wrap">
+            <a href="../index.html" class="logo">Taoufik Amrani</a>
+
+            <div class="navcenter" id="navcenter">
+                <button id="navbtn"><span data-i18n="nav.projects">Mes projets</span> <span class="chev">&#9662;</span></button>
+                <div class="dropdown">
+                    <a href="webvuln-scanner.html">webvuln-scanner <span class="kind" data-i18n="nav.kind.web">web</span></a>
+                    <a href="link-checker-mobile.html">link-checker-mobile <span class="kind" data-i18n="nav.kind.mobile">mobile</span></a>
+                    <a href="link-checker-extension.html">link-checker-extension <span class="kind" data-i18n="nav.kind.extension">extension</span></a>
+                    <a href="travel-planner-agent.html">travel-planner-agent <span class="kind" data-i18n="nav.kind.agent">agent IA</span></a>
+                </div>
+            </div>
+
+            <div class="navright">
+                <a href="https://www.linkedin.com/in/taoufik-amrani" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/Taoufik-29" target="_blank">GitHub</a>
+                <a href="mailto:taoufikamrani04@gmail.com">Mail</a>
+                <button id="langToggle" class="lang-toggle" aria-label="Switch language / Changer de langue">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-header">
+        <div class="wrap">
+            <a class="back-link" href="../index.html" data-i18n="project.back">&larr; Retour aux projets</a>
+        </div>
+    </div>
+
+    <section class="project-hero">
+        <div class="wrap">
+            <div class="project-layout">
+                <div class="video-frame">
+                    <video controls>
+                        <source src="../assets/videos/link-checker-mobile.mp4" type="video/mp4">
+                        <span data-i18n="video.fallback">Ton navigateur ne supporte pas la lecture de cette vidéo.</span>
+                    </video>
+                </div>
+
+                <div class="project-info">
+                    <p class="kind" data-i18n="project.mobile.kind">Mobile · React Native / Expo</p>
+                    <h1>link-checker-mobile</h1>
+                    <p class="desc" data-i18n="project.mobile.desc">
+                        Une appli mobile Android qui vérifie si un lien reçu par SMS, email ou réseau
+                        social est malveillant, avant même de cliquer dessus. Elle croise deux sources :
+                        l'API Google Safe Browsing (la même utilisée par Chrome) pour les menaces déjà
+                        connues, et des heuristiques que j'ai codées moi-même (raccourcisseurs d'URL,
+                        adresses IP à la place d'un nom de domaine, mots-clés de phishing) pour repérer
+                        les liens suspects qui ne sont pas encore répertoriés.
+                    </p>
+                    <div class="tags">
+                        <span>React Native</span>
+                        <span>Expo</span>
+                        <span>TypeScript</span>
+                        <span>Safe Browsing API</span>
+                    </div>
+                    <a class="repo-link" href="https://github.com/Taoufik-29/link-checker-mobile" target="_blank" data-i18n="project.repoLink">Voir le code sur GitHub &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="wrap" data-i18n="footer.text">Site construit à la main — HTML, CSS et JavaScript.</div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

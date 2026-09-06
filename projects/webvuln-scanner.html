@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>webvuln-scanner — Taoufik Amrani</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav class="top">
+        <div class="wrap">
+            <a href="../index.html" class="logo">Taoufik Amrani</a>
+
+            <div class="navcenter" id="navcenter">
+                <button id="navbtn"><span data-i18n="nav.projects">Mes projets</span> <span class="chev">&#9662;</span></button>
+                <div class="dropdown">
+                    <a href="webvuln-scanner.html">webvuln-scanner <span class="kind" data-i18n="nav.kind.web">web</span></a>
+                    <a href="link-checker-mobile.html">link-checker-mobile <span class="kind" data-i18n="nav.kind.mobile">mobile</span></a>
+                    <a href="link-checker-extension.html">link-checker-extension <span class="kind" data-i18n="nav.kind.extension">extension</span></a>
+                    <a href="travel-planner-agent.html">travel-planner-agent <span class="kind" data-i18n="nav.kind.agent">agent IA</span></a>
+                </div>
+            </div>
+
+            <div class="navright">
+                <a href="https://www.linkedin.com/in/taoufik-amrani" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/Taoufik-29" target="_blank">GitHub</a>
+                <a href="mailto:taoufikamrani04@gmail.com">Mail</a>
+                <button id="langToggle" class="lang-toggle" aria-label="Switch language / Changer de langue">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-header">
+        <div class="wrap">
+            <a class="back-link" href="../index.html" data-i18n="project.back">&larr; Retour aux projets</a>
+        </div>
+    </div>
+
+    <section class="project-hero">
+        <div class="wrap">
+            <div class="project-layout">
+                <div class="video-frame">
+                    <video controls>
+                        <source src="../assets/videos/webvuln-scanner.mp4" type="video/mp4">
+                        <span data-i18n="video.fallback">Ton navigateur ne supporte pas la lecture de cette vidéo.</span>
+                    </video>
+                </div>
+
+                <div class="project-info">
+                    <p class="kind" data-i18n="project.scanner.kind">Web · Python / Flask</p>
+                    <h1>webvuln-scanner</h1>
+                    <p class="desc" data-i18n="project.scanner.desc">
+                        Un scanner de vulnérabilités web que j'ai construit et compris ligne par ligne.
+                        L'outil explore automatiquement un site (crawler maison), puis teste chaque page
+                        trouvée contre 4 failles courantes : headers de sécurité manquants, cookies mal
+                        configurés, XSS réfléchi et injection SQL. Les résultats sont ensuite résumés et
+                        priorisés par l'API Claude, avec un chat pour poser des questions de suivi sur
+                        les failles détectées. Disponible en ligne de commande et en appli web Flask.
+                    </p>
+                    <div class="tags">
+                        <span>Python</span>
+                        <span>Flask</span>
+                        <span>BeautifulSoup</span>
+                        <span>API Claude</span>
+                    </div>
+                    <a class="repo-link" href="https://github.com/Taoufik-29/webvuln-scanner" target="_blank" data-i18n="project.repoLink">Voir le code sur GitHub &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="wrap" data-i18n="footer.text">Site construit à la main — HTML, CSS et JavaScript.</div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>

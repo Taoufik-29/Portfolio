@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Taoufik Amrani — Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="top">
+        <div class="wrap">
+            <span class="logo">Taoufik Amrani</span>
+
+            <div class="navcenter" id="navcenter">
+                <button id="navbtn"><span data-i18n="nav.projects">Mes projets</span> <span class="chev">&#9662;</span></button>
+                <div class="dropdown">
+                    <a href="projects/webvuln-scanner.html">webvuln-scanner <span class="kind" data-i18n="nav.kind.web">web</span></a>
+                    <a href="projects/link-checker-mobile.html">link-checker-mobile <span class="kind" data-i18n="nav.kind.mobile">mobile</span></a>
+                    <a href="projects/link-checker-extension.html">link-checker-extension <span class="kind" data-i18n="nav.kind.extension">extension</span></a>
+                    <a href="projects/travel-planner-agent.html">travel-planner-agent <span class="kind" data-i18n="nav.kind.agent">agent IA</span></a>
+                </div>
+            </div>
+
+            <div class="navright">
+                <a href="https://www.linkedin.com/in/taoufik-amrani" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/Taoufik-29" target="_blank">GitHub</a>
+                <a href="mailto:taoufikamrani04@gmail.com">Mail</a>
+                <button id="langToggle" class="lang-toggle" aria-label="Switch language / Changer de langue">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="wrap">
+            <p class="eyebrow" data-i18n="hero.eyebrow">Étudiant en cybersécurité</p>
+            <h1 data-i18n="hero.title">Je construis des outils qui vérifient avant de faire confiance.</h1>
+            <p class="bio" data-i18n="hero.bio">Je suis étudiant en cybersécurité, à la recherche d'un stage à l'étranger. Je construis mes propres outils de sécurité en dehors des cours — un scanner web, une appli mobile, une extension Chrome — pour comprendre chaque ligne de code, pas juste le résultat final.</p>
+            <a class="cv-link" href="assets/cv/Taoufik-Amrani-CV.pdf" download data-i18n="hero.cv">Télécharger mon CV &#8595;</a>
+        </div>
+    </header>
+
+    <section class="carousel-section">
+        <div class="wrap">
+            <div class="carousel-head">
+                <p data-i18n="carousel.heading">Mes projets</p>
+                <div class="carousel-nav">
+                    <button id="prevBtn" aria-label="Précédent">&#8249;</button>
+                    <button id="nextBtn" aria-label="Suivant">&#8250;</button>
+                </div>
+            </div>
+
+            <div class="carousel-viewport">
+                <div class="carousel-track" id="track">
+                    <div class="slide">
+                        <div class="slide-media">
+                            <img src="assets/images/webvuln-scanner.png" alt="Capture d'écran de webvuln-scanner">
+                        </div>
+                        <div class="slide-body">
+                            <p class="slide-kind" data-i18n="carousel.scanner.kind">Web · Python / Flask</p>
+                            <p class="slide-title">webvuln-scanner</p>
+                            <p class="slide-desc" data-i18n="carousel.scanner.desc">Détecte headers manquants, cookies non sécurisés, XSS et injection SQL, avec résumé IA.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-media">
+                            <img src="assets/images/link-checker-mobile.png" alt="Capture d'écran de link-checker-mobile">
+                        </div>
+                        <div class="slide-body">
+                            <p class="slide-kind" data-i18n="carousel.mobile.kind">Mobile · React Native</p>
+                            <p class="slide-title">link-checker-mobile</p>
+                            <p class="slide-desc" data-i18n="carousel.mobile.desc">Vérifie si un lien est malveillant via Google Safe Browsing et des heuristiques maison.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-media">
+                            <img src="assets/images/link-checker-extension.png" alt="Capture d'écran de link-checker-extension">
+                        </div>
+                        <div class="slide-body">
+                            <p class="slide-kind" data-i18n="carousel.extension.kind">Extension · JavaScript</p>
+                            <p class="slide-title">link-checker-extension</p>
+                            <p class="slide-desc" data-i18n="carousel.extension.desc">Le même moteur de détection, accessible d'un clic droit dans le navigateur.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide-media">
+                            <img src="assets/images/travel-planner-agent.png" alt="Capture d'écran de travel-planner-agent">
+                        </div>
+                        <div class="slide-body">
+                            <p class="slide-kind" data-i18n="carousel.travel.kind">Agent IA · Python / Flask</p>
+                            <p class="slide-title">travel-planner-agent</p>
+                            <p class="slide-desc" data-i18n="carousel.travel.desc">Planifie un voyage complet avec de vraies recherches web, budget et globe 3D interactif.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="dots" id="dots">
+                <span class="active"></span><span></span><span></span><span></span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="wrap" data-i18n="footer.text">Site construit à la main — HTML, CSS et JavaScript.</div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

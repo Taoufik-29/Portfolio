@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>link-checker-extension — Taoufik Amrani</title>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+    <nav class="top">
+        <div class="wrap">
+            <a href="../index.html" class="logo">Taoufik Amrani</a>
+
+            <div class="navcenter" id="navcenter">
+                <button id="navbtn"><span data-i18n="nav.projects">Mes projets</span> <span class="chev">&#9662;</span></button>
+                <div class="dropdown">
+                    <a href="webvuln-scanner.html">webvuln-scanner <span class="kind" data-i18n="nav.kind.web">web</span></a>
+                    <a href="link-checker-mobile.html">link-checker-mobile <span class="kind" data-i18n="nav.kind.mobile">mobile</span></a>
+                    <a href="link-checker-extension.html">link-checker-extension <span class="kind" data-i18n="nav.kind.extension">extension</span></a>
+                    <a href="travel-planner-agent.html">travel-planner-agent <span class="kind" data-i18n="nav.kind.agent">agent IA</span></a>
+                </div>
+            </div>
+
+            <div class="navright">
+                <a href="https://www.linkedin.com/in/taoufik-amrani" target="_blank" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/Taoufik-29" target="_blank">GitHub</a>
+                <a href="mailto:taoufikamrani04@gmail.com">Mail</a>
+                <button id="langToggle" class="lang-toggle" aria-label="Switch language / Changer de langue">EN</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="project-header">
+        <div class="wrap">
+            <a class="back-link" href="../index.html" data-i18n="project.back">&larr; Retour aux projets</a>
+        </div>
+    </div>
+
+    <section class="project-hero">
+        <div class="wrap">
+            <div class="project-layout">
+                <div class="video-frame">
+                    <video controls>
+                        <source src="../assets/videos/link-checker-extension.mp4" type="video/mp4">
+                        <span data-i18n="video.fallback">Ton navigateur ne supporte pas la lecture de cette vidéo.</span>
+                    </video>
+                </div>
+
+                <div class="project-info">
+                    <p class="kind" data-i18n="project.extension.kind">Extension · JavaScript</p>
+                    <h1>link-checker-extension</h1>
+                    <p class="desc" data-i18n="project.extension.desc">
+                        Le même moteur de détection que l'appli mobile (API Safe Browsing + heuristiques
+                        maison), mais directement intégré au navigateur Chrome. Deux façons de l'utiliser :
+                        cliquer sur l'icône de l'extension pour vérifier un lien copié, ou faire un simple
+                        clic droit sur n'importe quel lien d'une page pour le vérifier instantanément — le
+                        résultat s'affiche via une notification système. La logique de détection est
+                        partagée entre le popup et le service worker d'arrière-plan, pour ne l'écrire qu'une
+                        seule fois.
+                    </p>
+                    <div class="tags">
+                        <span>JavaScript</span>
+                        <span>Chrome Extensions API</span>
+                        <span>Manifest V3</span>
+                    </div>
+                    <a class="repo-link" href="https://github.com/Taoufik-29/link-checker-extension" target="_blank" data-i18n="project.repoLink">Voir le code sur GitHub &rarr;</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="foot">
+        <div class="wrap" data-i18n="footer.text">Site construit à la main — HTML, CSS et JavaScript.</div>
+    </footer>
+
+    <script src="../script.js"></script>
+</body>
+</html>
